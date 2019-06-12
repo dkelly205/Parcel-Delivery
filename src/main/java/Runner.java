@@ -12,7 +12,7 @@ public class Runner {
 
         //eg 5x5(1,3)(4,4) should return EENNDEEENDDDD
 
-        System.out.println(Constants.QUESTION);
+        System.out.println(Constants.QUESTION.getDescription());
         Scanner scanner = new Scanner(System.in);
 
         String userInput = scanner.nextLine();
@@ -30,7 +30,7 @@ public class Runner {
     public static void createGrid(String input){
 
         if(input == null || input.equals("")){
-            System.out.println(Constants.NO_INSRUCTIONS);
+            System.out.println(Constants.NO_INSRUCTIONS.getDescription());
         }
 
         //convert input to array
