@@ -1,5 +1,7 @@
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Runner {
@@ -21,7 +23,25 @@ public class Runner {
 
         int[][] grid = createGrid(userInput);
 
-       // List<Point> points = createPoints(userInput);
+        if(grid != null){
+
+            //input was 6x7(1,2)
+            System.out.println("Number of columns: " + grid.length); //this returns 6
+            System.out.println("Number of rows: " + grid[0].length);//this returns 7
+
+            List<Point> points = createPoints(userInput);
+
+            if(points.size() > 0){
+                //we have a point -- assuming 1 parcel per location
+                Courier courier = new Courier(points.size(), 0 ,0);
+                courier.deliveries(points);
+
+                //deliveries should now be complete
+                System.out.println("All deliveries are complete!");
+                System.out.println("ENNDDEENNND!");
+            }
+        }
+
 
     }
 
@@ -63,6 +83,60 @@ public class Runner {
         }
 
         return null;
+    }
+
+
+
+
+    public static List<Point> createPoints(String input) {
+
+        List<Point> points = new ArrayList<>();
+
+        //remove the first 3 characters from input
+        String updatedInput = input.substring(3);
+
+        //get the length - should be divisible by 5,
+
+        System.out.println(updatedInput);
+
+        //check input size is divisible by 5 - if not then input would be invalid as each coordinate should have 5 characters
+        if(updatedInput.length() % 5 == 0) {
+
+            int numberOfCoordinates = updatedInput.length() / 5;
+
+            //create strings of each 5 characters and add each String to a list
+            List<String> coordinates = new ArrayList<>();
+
+            for (int i = 0; i < numberOfCoordinates; i++) {
+                coordinates.add(updatedInput.substring(0, 5));
+            }
+
+
+            for (String c : coordinates) {
+
+                //need to remove the (,) from c, check length remaining of c is 2 otherwise input is invalid
+                c = c.replace("(", "");
+                c = c.replace(",", "");
+                c = c.replace(")", "");
+                if(c.length() == 2){
+                    String[] myArray = c.split("");
+
+                    try{
+                        int x = Integer.parseInt(myArray[0]);
+                        int y = Integer.parseInt(myArray[1]);
+
+                        //create the point
+                        Point point = new Point(x, y);
+                        //add points to arraylist
+                        points.add(point);
+
+                    }catch(Exception e){
+                        System.out.println(Constants.INVALID_INSRUCTIONS);
+                    }
+                }
+            }
+        }
+        return points;
     }
 
 }
