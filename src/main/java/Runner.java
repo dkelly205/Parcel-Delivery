@@ -26,12 +26,12 @@ public class Runner {
     }
 
 
-    public static int[][] createGrid(String input){
+    public static int[][] createGrid(String input) {
         int gridX;
         int gridY;
 
         //minimum size of a valid input would be 8 characters eg. 5x5(1,3)
-        if(input == null || input.length() < 8) {
+        if (input == null || input.length() < 8) {
             System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
         }
         else {
@@ -39,27 +39,30 @@ public class Runner {
             //convert String to Array
             String[] myArray = input.split("");
 
-            if(myArray[1].toLowerCase().equals("x")){
+            if (myArray[1].toLowerCase().equals("x")) {
 
-                try{
+                try {
                     gridX = Integer.parseInt(myArray[0]);
                     gridY = Integer.parseInt(myArray[2]);
+
+                    if (gridX < 1 || gridY < 1) {
+                        System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
+                        return null;
+                    }
                     int[][] grid = new int[gridX][gridY];
 
                     return grid;
 
-                }catch(Exception e){
+                } catch (Exception e) {
                     System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
                 }
 
-            }else{
+            } else {
                 System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
             }
-
-            return null;
         }
 
-
-
+        return null;
     }
+
 }
