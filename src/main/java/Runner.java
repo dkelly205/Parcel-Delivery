@@ -1,5 +1,4 @@
 
-import com.sun.tools.javac.util.StringUtils;
 
 import java.util.Scanner;
 
@@ -20,21 +19,46 @@ public class Runner {
         //remove whitespace
         userInput = userInput.replaceAll("\\s","");
 
-        createGrid(userInput);
+        int[][] grid = createGrid(userInput);
 
-
+       // List<Point> points = createPoints(userInput);
 
     }
 
 
-    public static void createGrid(String input){
+    public static int[][] createGrid(String input){
+        int gridX;
+        int gridY;
 
-        if(input == null || input.equals("")){
-            System.out.println(Constants.NO_INSRUCTIONS.getDescription());
+        //minimum size of a valid input would be 8 characters eg. 5x5(1,3)
+        if(input == null || input.length() < 8) {
+            System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
+        }
+        else {
+
+            //convert String to Array
+            String[] myArray = input.split("");
+
+            if(myArray[1].toLowerCase().equals("x")){
+
+                try{
+                    gridX = Integer.parseInt(myArray[0]);
+                    gridY = Integer.parseInt(myArray[2]);
+                    int[][] grid = new int[gridX][gridY];
+
+                    return grid;
+
+                }catch(Exception e){
+                    System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
+                }
+
+            }else{
+                System.out.println(Constants.INVALID_INSRUCTIONS.getDescription());
+            }
+
+            return null;
         }
 
-        //convert input to array
-        //char[] stringToCharArray = input.toCharArray();
 
 
     }

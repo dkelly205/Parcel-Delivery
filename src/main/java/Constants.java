@@ -1,6 +1,6 @@
 public enum Constants {
 
-    NO_INSRUCTIONS("No instructions given"),
+    INVALID_INSRUCTIONS("Invalid instructions"),
     QUESTION("Please input instructions");
 
 
