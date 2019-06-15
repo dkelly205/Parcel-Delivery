@@ -13,6 +13,7 @@ public class CourierTest {
     Point pointB;
     Point pointC;
     Point pointD;
+    Point pointE;
 
     @Before
     public void setUp()throws Exception{
@@ -21,6 +22,7 @@ public class CourierTest {
         pointB = new Point(2, 1);
         pointC = new Point(4, 4);
         pointD = new Point(0,0);
+        pointE = new Point(0,1);
     }
 
     @Test
@@ -57,22 +59,22 @@ public class CourierTest {
 
     @Test
     public void canMoveEast(){
-        courier.move(pointA);
+        assertEquals("E", courier.move(pointA));
         assertEquals(1, courier.getPositionX());
     }
 
     @Test
     public void canMoveNorth(){
-        courier.move(pointB);
+        assertEquals("N", courier.move(pointE));
         assertEquals(1, courier.getPositionY());
+
     }
 
     @Test
-    public void canMoveWestAndSouth(){
-        courier.move(pointC);
-        courier.move(pointD);
+    public void canMoveEastNorthSouthAndWest(){
+        assertEquals("EEEENNNN", courier.move(pointC));
+        assertEquals("WWWWSSSS", courier.move(pointD));
         assertEquals(0, courier.getPositionX());
-        assertEquals(0, courier.getPositionY());
     }
 
 }

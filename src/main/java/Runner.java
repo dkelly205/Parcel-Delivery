@@ -11,7 +11,7 @@ public class Runner {
 
         //need to get input from the user
 
-        //eg 5x5(1,3)(4,4) should return EENNDEEENDDDD
+        //eg 5x5(1,3)(4,4) should return ENNNDEEEENNNND
 
         System.out.println(Constants.QUESTION.getDescription());
         Scanner scanner = new Scanner(System.in);
@@ -34,11 +34,11 @@ public class Runner {
             if(points.size() > 0){
                 //we have a point -- assuming 1 parcel per location
                 Courier courier = new Courier(points.size(), 0 ,0);
-                courier.deliveries(points);
+                String result = courier.deliveries(points);
 
                 //deliveries should now be complete
                 System.out.println("All deliveries are complete!");
-                System.out.println("ENNDDEENNND!");
+                System.out.println(result);
             }
         }
 

@@ -48,17 +48,53 @@ public class Courier {
         this.complete = complete;
     }
 
-    public void drop(int noOfParcels){
+    public String drop(int noOfParcels){
         this.parcels -= noOfParcels;
 
         if(parcels <=0 && !complete){
             deliveriesComplete();
         }
+
+        return "D";
     }
 
-    public void move(Point point){
-        this.positionX = point.getX();
-        this.positionY = point.getY();
+    public String move(Point point){
+
+         int eastOrWest = positionX - point.getX();
+         int northOrSouth = positionY - point.getY();
+
+         String result = "";
+         if(eastOrWest > 0){
+             //moving west
+             for(int i = 0; i < eastOrWest; i++){
+                 result = result.concat("W");
+             }
+         }else if(eastOrWest < 0){
+             //moving east
+             eastOrWest *= -1;
+             for(int i = 0; i < eastOrWest; i++){
+                 result = result.concat("E");
+             }
+         }
+
+         if(northOrSouth > 0){
+             //moving south
+             for(int i = 0; i < northOrSouth; i++){
+                 result = result.concat("S");
+             }
+         }else if(northOrSouth < 0){
+             //moving north
+             northOrSouth *= -1;
+             for(int i = 0; i < northOrSouth; i++){
+                 result = result.concat("N");
+             }
+         }
+
+         //set the new points
+         setPositionX(point.getX());
+         setPositionY(point.getY());
+
+         return result;
     }
 
     public void deliveriesComplete(){
@@ -66,11 +102,15 @@ public class Courier {
     }
 
 
-    public void deliveries(List<Point> locations){
+    public String deliveries(List<Point> locations){
+        String result ="";
         for(Point point: locations){
-            move(point);
-            drop(1);
+            String m = move(point);
+            String d = drop(1);
+            result.concat(m);
+            result.concat(d);
         }
+        return result;
     }
 
     @Override

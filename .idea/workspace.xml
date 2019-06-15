@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1770989b-317d-4399-9c21-042a6e85922d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Courier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +21,12 @@
       <file leaf-file-name="Courier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Courier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="505">
+              <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+              <folding>
+                <element signature="e#1529#1530#0" expanded="true" />
+                <element signature="e#1572#1573#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -30,29 +34,11 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="540">
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -60,20 +46,11 @@
       <file leaf-file-name="CourierTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CourierTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-331">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="393">
+              <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -96,11 +73,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/Point.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CourierTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Courier.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Courier.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CourierTest.java" />
       </list>
     </option>
   </component>
@@ -186,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="JUnit.CourierTest.canMoveEastNorthSouthAndWest">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="parceldelivery" />
@@ -203,6 +180,57 @@
       <option name="MAIN_CLASS_NAME" value="CourierTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CourierTest.canMoveEast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parceldelivery" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CourierTest" />
+      <option name="METHOD_NAME" value="canMoveEast" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CourierTest.canMoveEastNorthSouthAndWest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parceldelivery" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CourierTest" />
+      <option name="METHOD_NAME" value="canMoveEastNorthSouthAndWest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CourierTest.canMoveNorth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parceldelivery" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CourierTest" />
+      <option name="METHOD_NAME" value="canMoveNorth" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -253,9 +281,15 @@
     <list>
       <item itemvalue="Application.Runner" />
       <item itemvalue="JUnit.CourierTest" />
+      <item itemvalue="JUnit.CourierTest.canMoveNorth" />
+      <item itemvalue="JUnit.CourierTest.canMoveEast" />
+      <item itemvalue="JUnit.CourierTest.canMoveEastNorthSouthAndWest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourierTest.canMoveEastNorthSouthAndWest" />
+        <item itemvalue="JUnit.CourierTest.canMoveEast" />
+        <item itemvalue="JUnit.CourierTest.canMoveNorth" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.CourierTest" />
       </list>
@@ -275,17 +309,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CourierTest - 2019.06.12 at 00h 36m 11s.xml">
-      <configuration name="CourierTest" configurationId="JUnit" />
+    <history-entry file="CourierTest_canMoveNorth - 2019.06.15 at 02h 17m 12s.xml">
+      <configuration name="CourierTest.canMoveNorth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourierTest - 2019.06.12 at 00h 59m 17s.xml">
-      <configuration name="CourierTest" configurationId="JUnit" />
+    <history-entry file="CourierTest_canMoveNorth - 2019.06.15 at 02h 17m 27s.xml">
+      <configuration name="CourierTest.canMoveNorth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourierTest - 2019.06.12 at 01h 02m 46s.xml">
-      <configuration name="CourierTest" configurationId="JUnit" />
+    <history-entry file="CourierTest_canMoveNorth - 2019.06.15 at 07h 11m 38s.xml">
+      <configuration name="CourierTest.canMoveNorth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourierTest - 2019.06.12 at 20h 58m 30s.xml">
-      <configuration name="CourierTest" configurationId="JUnit" />
+    <history-entry file="CourierTest_canMoveNorth - 2019.06.15 at 07h 13m 01s.xml">
+      <configuration name="CourierTest.canMoveNorth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourierTest_canMoveNorth - 2019.06.15 at 07h 14m 51s.xml">
+      <configuration name="CourierTest.canMoveNorth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourierTest_canMoveEast - 2019.06.15 at 07h 15m 39s.xml">
+      <configuration name="CourierTest.canMoveEast" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourierTest_canMoveEastNorthSouthAndWest - 2019.06.15 at 07h 19m 41s.xml">
+      <configuration name="CourierTest.canMoveEastNorthSouthAndWest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourierTest_canMoveEastNorthSouthAndWest - 2019.06.15 at 07h 20m 03s.xml">
+      <configuration name="CourierTest.canMoveEastNorthSouthAndWest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourierTest_canMoveEastNorthSouthAndWest - 2019.06.15 at 07h 20m 51s.xml">
+      <configuration name="CourierTest.canMoveEastNorthSouthAndWest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourierTest_canMoveEastNorthSouthAndWest - 2019.06.15 at 07h 21m 08s.xml">
+      <configuration name="CourierTest.canMoveEastNorthSouthAndWest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -294,7 +346,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.27930173" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.27805486" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -302,7 +354,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24563591" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3255814" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3254364" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
@@ -328,21 +380,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
           <line>53</line>
           <properties />
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Runner.java</url>
@@ -357,7 +397,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -365,6 +405,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding>
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -413,6 +457,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+          <folding>
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -441,13 +489,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CourierTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -458,24 +503,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Courier.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CourierTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="393">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Courier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="505">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+          <folding>
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="540">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
