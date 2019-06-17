@@ -107,8 +107,8 @@ public class Courier {
         for(Point point: locations){
             String m = move(point);
             String d = drop(1);
-            result.concat(m);
-            result.concat(d);
+            result = result.concat(m);
+            result = result.concat(d);
         }
         return result;
     }

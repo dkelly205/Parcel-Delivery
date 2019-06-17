@@ -71,10 +71,25 @@ public class CourierTest {
     }
 
     @Test
-    public void canMoveEastNorthSouthAndWest(){
+    public void canMoveEastAndNorth(){
         assertEquals("EEEENNNN", courier.move(pointC));
+    }
+    
+    @Test
+    public void canMoveSouthAndWest() {
+    	courier.move(pointC);
         assertEquals("WWWWSSSS", courier.move(pointD));
-        assertEquals(0, courier.getPositionX());
+    }
+    
+    @Test 
+    public void canMoveNorthEastSouthAndWest() {
+    	courier.move(pointC);
+    	assertEquals(4, courier.getPositionX());
+    	assertEquals(4, courier.getPositionY());
+    	courier.move(pointD);
+    	assertEquals(0, courier.getPositionX());
+    	assertEquals(0, courier.getPositionY());
+    	
     }
 
 }

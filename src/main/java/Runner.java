@@ -107,8 +107,10 @@ public class Runner {
             //create strings of each 5 characters and add each String to a list
             List<String> coordinates = new ArrayList<>();
 
+            //not working - only taking the first 5 -- will need to sort the coordinates
             for (int i = 0; i < numberOfCoordinates; i++) {
                 coordinates.add(updatedInput.substring(0, 5));
+                updatedInput = updatedInput.substring(5); //remove the first 5 coordinates
             }
 
 
